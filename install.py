@@ -34,6 +34,6 @@ if _os == 'Windows':
 else:
     cmake_def = " -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=${EASIFEM_EXTPKGS}"
     print( "CMAKE DEF : ", cmake_def )
-    os.system( f"cmake -S ./ -B ./build {cmake_def}")
-    os.system(f"cmake --build ./build --target install" )
+    os.system( f"cmake -S ./ -B ~/temp/Sparsekit/build {cmake_def}")
+    os.system(f"cmake --build ~/temp/Sparsekit/build --target install" )
     print("Installation DONE!!")
