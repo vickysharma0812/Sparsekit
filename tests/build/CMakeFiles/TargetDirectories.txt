@@ -1,3 +1,0 @@
-/Users/vikassharma/Dropbox/easifem-extpkgs/Sparsekit/tests/build/CMakeFiles/rebuild_cache.dir
-/Users/vikassharma/Dropbox/easifem-extpkgs/Sparsekit/tests/build/CMakeFiles/edit_cache.dir
-/Users/vikassharma/Dropbox/easifem-extpkgs/Sparsekit/tests/build/CMakeFiles/test_Sparsekit.dir
