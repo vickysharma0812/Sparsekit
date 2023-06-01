@@ -4,10 +4,10 @@ This page provides the documentation of `matvec.f`. The contents of this module 
 
 | subroutine  | description  |
 |---|---|
-| `AMUX`   | A times a vector. Compressed Sparse Row (CSR) format.        |
-| `AMUXMS` | A times a vector. Modified Compress Sparse Row format.       |
+| `AMUX`   | `A` times a vector. Compressed Sparse Row (CSR) format.        |
+| `AMUXMS` | `A` times a vector. Modified Compress Sparse Row format.       |
 | `ATMUX`  | `Transp(A)` times a vector. CSR format.                        |
-| `ATMUXR` | `Transp(A)` times a vector. CSR format. A rectangular.         |
+| `ATMUXR` | `Transp(A)` times a vector. CSR format. `A` rectangular.         |
 | `VBRMV`  | Sparse matrix-full vector product, in VBR format             |
 | `LDSOL`  | Lower Triang. solve.  Modified Sparse Row (MSR) format.      |
 | `LDSOLL` | Lower Triang. solve with level scheduling. MSR format.       |

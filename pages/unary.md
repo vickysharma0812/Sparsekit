@@ -10,7 +10,7 @@ This page provides the documentation of `unary.f`. The contents of this module a
 | `CLNCSR`  | clean up the CSR format matrix, remove duplicate entry, etc |
 | `TRANSP` | in-place transposition routine |
 | `COPMAT` | copy of a matrix into another matrix (both stored csr)    |
-| `GETELM` | returns a(i,j) for any (i,j) from a CSR-stored matrix.     |
+| `GETELM` | returns a(i, j) for any (i, j) from a CSR-stored matrix.     |
 | `GETDIA` | extracts a specified diagonal from a matrix.                |
 | `GETL`   | extracts lower triangular part |
 | `GETU`   | extracts upper triangular part |
@@ -18,7 +18,7 @@ This page provides the documentation of `unary.f`. The contents of this module a
 | `AMASK`  | extracts C = A mask M |
 | `RPERM`  | permutes the rows of a matrix (B = P A) |
 | `CPERM`  | permutes the columns of a matrix (B = A Q) |
-| `DPERM`  | permutes both the rows and columns of a matrix (B = P A Q ) |
+| `DPERM`  | permutes both the rows and columns of a matrix (`B = P A Q`) |
 | `DPERM1` | general extraction routine (extracts arbitrary rows) |
 | `DPERM2` | general submatrix permutation/extraction routine            |
 | `DVPERM` | permutes a real vector (in-place)                           |
@@ -30,7 +30,7 @@ This page provides the documentation of `unary.f`. The contents of this module a
 | `BLKFND` | finds the block-size of a matrix.                           |
 | `BLKCHK` | checks whether a given integer is the block size of A.      |
 | `INFDIA` | obtains information on the diagonals of A.                  |
-| `AMUBDG` | gets number of nonzeros in each row of A*B (as well as NNZ) |
+| `AMUBDG` | gets number of nonzeros in each row of `A*B` (as well as NNZ) |
 | `APLBDG` | gets number of nonzeros in each row of A+B (as well as NNZ) |
 | `RNRMS`  | computes the norms of the rows of A                         |
 | `CNRMS`  | computes the norms of the columns of A                      |
@@ -41,7 +41,7 @@ This page provides the documentation of `unary.f`. The contents of this module a
 | `XTROWS` | extracts given rows from a matrix in CSR format.            |
 | `CSRKVSTR`|  Finds block row partitioning of matrix in CSR format      |
 | `CSRKVSTC`|  Finds block column partitioning of matrix in CSR format   |
-| `KVSTMERGE`| Merges block partitionings, for conformal row/col pattern |
+| `KVSTMERGE`| Merges block partitionings, for conformal row/col pattern. |
 
 ## SUBMAT
 
@@ -178,7 +178,7 @@ on entry:
 
 on return:
 
-- `ncol` = actual row dimension of the transpose of the input matrix. Note that this may be .le. the input value for `ncol`, in case some of the last columns of the input matrix are zero columns. In the case where the actual number of rows found in `transp(A) ` exceeds the input value of `ncol`, `transp` will return without completing the transposition. see `ierr`.
+- `ncol` = actual row dimension of the transpose of the input matrix. Note that this may be .le. the input value for `ncol`, in case some of the last columns of the input matrix are zero columns. In the case where the actual number of rows found in `transp(A)` exceeds the input value of `ncol`, `transp` will return without completing the transposition. see `ierr`.
 - `a,ja,ia` = contains the transposed matrix in compressed sparse row format. The row dimension of `a, ja, ia` is now ncol.
 - `ierr` = integer. error message. If the number of rows for the transposed matrix exceeds the input value of ncol, then ierr is  set to that number and transp quits. Otherwise ierr is set to 0 (normal return).
 

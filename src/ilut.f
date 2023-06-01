@@ -11,7 +11,7 @@ c Contents:                                                            c
 c-------------------------preconditioners------------------------------c
 c                                                                      c
 c ILUT    : Incomplete LU factorization with dual truncation strategy  c
-c ILUTP   : ILUT with column  pivoting                                 c
+c ILUTP   : ILUT with column pivoting                                 c
 c ILUD    : ILU with single dropping + diagonal compensation (~MILUT)  c
 c ILUDP   : ILUD with column pivoting                                  c
 c ILUK    : level-k ILU                                                c
